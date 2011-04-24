@@ -163,19 +163,8 @@ input.text_input:focus {
 
 /* error messages */
 
-.field_with_errors {
+/*.field_with_errors {
 
-	/* make em glow?
-	
-	border-radius:5px;
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px;
-	
-	border:1px solid #DE2A2A;
-	box-shadow:0 0 5px #DE2A2A;
-	-moz-box-shadow:0 0 5px #DE2A2A;
-	-webkit-box-shadow:0 0 5px #DE2A2A;*/
-	
 	margin-top: 10px;
 	padding: 2px;
 	background-color: red;
@@ -184,6 +173,21 @@ input.text_input:focus {
 
 .field_with_errors label {
 	color: #fff;
+}*/
+
+.field_with_errors input.text_input {
+
+	/* make em glow */
+	
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	
+	border:1px solid #DE2A2A;
+	box-shadow:0 0 5px #DE2A2A;
+	-moz-box-shadow:0 0 5px #DE2A2A;
+	-webkit-box-shadow:0 0 5px #DE2A2A;
+	
 }
 
 #error_explanation {

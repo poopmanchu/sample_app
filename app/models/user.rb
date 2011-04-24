@@ -46,6 +46,11 @@ class User < ActiveRecord::Base
 		# implicit wrong password case, since will return nil at end of method
 	end
 	
+	def self.authenticate_with_salt(id, cookie_salt)
+		user = find_by_id(id)
+		(user && (user.salt == cookie_salt)) ? user : nil
+	end
+	
 	private
 	
 		def encrypt_password
